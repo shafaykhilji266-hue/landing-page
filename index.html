@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Delivery Service Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="top-bar-pink">
+        <div class="container-full">
+            <div class="logo-brand">foodpanda</div>
+            <nav class="partner-links">
+                <a href="#" class="btn-partner">Join as Partner</a>
+                <a href="#" class="btn-partner">Business Account</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container-full nav-content">
+            <div class="nav-left-info">
+                <div class="logo-main">foodpanda</div>
+                <div class="location-display">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Current Location: New address Service Road W Islamabad
+                </div>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="btn-login">Log in</a>
+                <a href="#" class="btn-cta">Sign up for free delivery</a>
+                <div class="language-picker">EN <i class="fas fa-chevron-down"></i></div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="service-tabs">
+        <div class="container-full">
+            <a href="#" class="tab-item active"><i class="fas fa-motorcycle"></i> Delivery</a>
+            <a href="#" class="tab-item"><i class="fas fa-walking"></i> Pick-up</a>
+            <a href="#" class="tab-item">GroceryMart</a>
+            <a href="#" class="tab-item"><i class="fas fa-store"></i> Shops</a>
+            <a href="#" class="tab-item">Catering</a>
+        </div>
+    </nav>
+
+    <div class="page-layout-grid">
+        <div class="container-main">
+            
+            <aside class="sidebar-filters">
+                <h3 class="filter-heading">Search Filters</h3>
+
+                <div class="filter-group">
+                    <h4>Sort by</h4>
+                    <label><input type="radio" name="sort" checked> Relevance</label>
+                    <label><input type="radio" name="sort"> Fastest delivery</label>
+                    <label><input type="radio" name="sort"> Distance</label>
+                    <label><input type="radio" name="sort"> Top rated</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Quick Picks</h4>
+                    <button class="filter-tag-btn">Ratings 4+</button>
+                    <button class="filter-tag-btn"><i class="fas fa-crown"></i> Super Partner</button>
+                </div>
+                
+                <div class="filter-group">
+                    <h4>Deals</h4>
+                    <label><input type="checkbox"> Free delivery</label>
+                    <label><input type="checkbox"> Accepts vouchers</label>
+                </div>
+            </aside>
+
+            <main class="main-content-area">
+
+                <div class="search-bar-primary">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for restaurants, cuisines, and dishes">
+                </div>
+
+                <div class="promo-banner-large">
+                    <div class="banner-text">
+                        <h2>Sign up for free delivery on your first order</h2>
+                        <a href="#" class="btn-signup">Sign up</a>
+                    </div>
+                    <div class="banner-image-placeholder">
+                        <img src="/images/panda.jpg" alt="">
+                        
+                    </div>
+                </div>
+
+                <section class="section-carousel">
+                    <h2>Your Daily Deals</h2>
+                    <div class="carousel-track">
+                        <div class="promo-card large">
+                            <div class="badge-tag">Up to 30% off</div>
+                            <div class="card-img-content"></div>
+                            <img src="/images/fp3.jpg" alt="" width="300">
+                        </div>
+
+                        <div class="promo-card standard">
+                            <div class="brand-logo"></div>
+                            <div class="badge-tag green">Deal for Rs.349</div>
+                            <div class="card-img-content"></div>
+                            <img src="/images/pizza.jpg" alt="" width="250">
+                        </div>
+                        
+                        <div class="promo-card standard">
+                            <div class="brand-logo"></div>
+                            <div class="badge-tag red">Deal for Rs.599</div>
+                            <div class="card-img-content"></div>
+                            <img src="/images/fp2.jpg" alt="" width="200">
+                        </div>
+
+                        <div class="promo-card standard">
+                            <div class="brand-logo homechef">HomeChef</div>
+                            <div class="card-img-content"></div>
+                            <img src="/images/home.jpg" alt="" width="200">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-listings">
+                    <h2>Popular Restaurants Near You</h2>
+                    <div class="restaurant-grid">
+                        
+                        <div class="restaurant-card">
+                            <div class="card-image-wrapper">
+                                <div class="promo-badge-small">20% off selected items</div>
+                                <div class="card-image-placeholder"></div>
+                            </div>
+                            <div class="card-details">
+                                <h3>broadway</h3>
+                                <div class="info-line">
+                                    <span>$ • Cuisine Type</span>
+                                    <span>4.5 (500+)</span>
+                                    <img src="/images/burger.jpg" alt="" height="200" width="100">
+                                </div>
+                                <div class="delivery-info">
+                                    <i class="fas fa-clock"></i> 45 min
+                                    <i class="fas fa-motorcycle"></i> Rs.99
+                                </div>
+                            
+                            </div>
+                        </div>
+
+                        <div class="restaurant-card">...</div>
+                        <img src="/images/paratha.jpg" alt="">
+        
+                        
+                        
+                        
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
