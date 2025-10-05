@@ -1,0 +1,372 @@
+/* Variables for brand color and general consistency */
+:root {
+    --brand-pink: #d70f64; /* The signature color */
+    --text-color: #333;
+    --background-light: #f7f7f7;
+    --white: #fff;
+    --border-subtle: #eee;
+}
+
+/* Base Reset and Layout Containers */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-light);
+}
+
+.container-full {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* 1. TOP BAR STYLES */
+.top-bar-pink {
+    background-color: var(--brand-pink);
+    color: var(--white);
+    padding: 10px 0;
+}
+
+.logo-brand {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.partner-links {
+    margin-left: auto;
+}
+
+.btn-partner {
+    margin-left: 15px;
+    padding: 5px 10px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* 2. MAIN NAVIGATION STYLES */
+.main-nav {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 15px 0;
+}
+
+.nav-content {
+    justify-content: space-between;
+}
+
+.nav-left-info {
+    display: flex;
+    align-items: center;
+}
+
+.logo-main {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--brand-pink);
+    margin-right: 30px;
+}
+
+.location-display {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+
+.location-display i {
+    color: var(--brand-pink);
+    margin-right: 5px;
+}
+
+.btn-login {
+    border: 1px solid var(--border-subtle);
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-right: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-cta {
+    background-color: var(--brand-pink);
+    color: var(--white);
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* 3. SERVICE TABS */
+.service-tabs {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.tab-item {
+    padding: 8px 15px;
+    margin-right: 20px;
+    color: #555;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tab-item.active {
+    color: var(--brand-pink);
+    border-bottom: 2px solid var(--brand-pink);
+    font-weight: 600;
+}
+
+/* 4. MAIN PAGE LAYOUT (GRID) */
+.page-layout-grid {
+    padding: 20px 0;
+}
+
+.container-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    /* Sidebar: 250px | Content: Flexible */
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+}
+
+/* SIDEBAR FILTERS */
+.sidebar-filters {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    align-self: flex-start; 
+}
+
+.filter-heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.filter-group h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filter-tag-btn {
+    background-color: #f2f2f2;
+    color: #555;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-right: 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* MAIN CONTENT AREA */
+.search-bar-primary {
+    background-color: var(--white);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.search-bar-primary input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* PROMO BANNER */
+.promo-banner-large {
+    background-color: #fdf5f8; 
+    border-radius: 8px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.banner-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.btn-signup {
+    background-color: var(--brand-pink);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.banner-image-placeholder {
+    width: 250px;
+    height: 150px;
+    background-color: #fbc4d8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-pink);
+    font-weight: bold;
+}
+
+/* DAILY DEALS CAROUSEL */
+.section-carousel h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.promo-card {
+    flex-shrink: 0;
+    height: 150px;
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.promo-card.large {
+    width: 330px;
+    background-color: #ffdae9;
+}
+
+.promo-card.standard {
+    width: 250px;
+}
+
+.badge-tag {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: var(--brand-pink);
+    color: var(--white);
+    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 10;
+}
+
+.badge-tag.green { background-color: #55b848; }
+.badge-tag.red { background-color: #db2b34; }
+
+/* RESTAURANT LISTINGS (The main content grid) */
+.section-listings h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.restaurant-grid {
+    /* Responsive 3-column layout */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px 20px;
+}
+
+.restaurant-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card-image-wrapper {
+    position: relative;
+    height: 180px; 
+}
+
+.card-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0; 
+}
+
+.promo-badge-small {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-color: var(--brand-pink);
+    color: var(--white);
+    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    z-index: 10;
+}
+
+.card-details {
+    padding: 15px;
+}
+
+.card-details h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.info-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.delivery-info i {
+    color: var(--brand-pink);
+    margin-right: 4px;
+    margin-left: 10px;
+}
+
+.delivery-info i:first-child {
+    margin-left: 0;
+}
